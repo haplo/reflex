@@ -2,8 +2,7 @@
 
 Note that some Pelican settings may not work properly.
 
-Most settings were inherited from [Flex theme](https://github.com/alexandrevicenzi/Flex).
-Look at [Flex's wiki page for settings](https://github.com/alexandrevicenzi/Flex/wiki/Custom-Settings).
+Most settings were inherited from [Flex theme](https://github.com/alexandrevicenzi/Flex) and [Flex's wiki page for settings](https://github.com/alexandrevicenzi/Flex/wiki/Custom-Settings).
 
 ## Theme
 
@@ -50,6 +49,7 @@ Look at [Flex's wiki page for settings](https://github.com/alexandrevicenzi/Flex
 | PIWIK_SITE_ID or MATOMO_SITE_ID  | ID for the monitored website.                                          |
 | PIWIK_URL or MATOMO_URL          | URL to your Piwik/Matomo server - without ‘https://‘ at the beginning.  |
 | ISSO_URL                         | URL of your Isso comment server. See [The Isso Docs](https://posativ.org/isso/docs/configuration/client/#data-isso) for details. |
+| SHYNET_URL                       | URL of your Shynet server. See the [Shynet integration documentation](shynet.md) for details. |
 
 ## Plugins
 

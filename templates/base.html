@@ -295,6 +295,10 @@
     {% include "partial/matomo.html" %}
   {% endif %}
 
+  {% if SHYNET_URL %}
+    {% include "partial/shynet.html" %}
+  {% endif %}
+
   {% include "partial/jsonld.html" %}
 
   {% if GITHUB_CORNER_URL %}
