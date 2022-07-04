@@ -28,6 +28,7 @@ A minimalist [Pelican](http://blog.getpelican.com/) theme, forked from [Flex](ht
 - [StatusCake](https://www.statuscake.com/)
 - [Isso](https://posativ.org/isso/)
 - [Microsoft Clarity](https://clarity.microsoft.com)
+- [Shynet](https://github.com/milesmcc/shynet)
 
 ## Plugins Support
 
