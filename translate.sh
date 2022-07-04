@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function extract_pot() {
-    pybabel extract -s --no-wrap --project="Flex" --copyright-holder="Alexandre Vicenzi" --version="2.1.0" --mapping translations/babel.cfg --output translations/messages.pot ./
+    pybabel extract -s --no-wrap --project="Reflex" --copyright-holder="Fidel Ramos" --version="3.0.0" --mapping translations/babel.cfg --output translations/messages.pot ./
 }
 
 function new_translation() {
@@ -27,7 +27,7 @@ function can_run() {
 }
 
 function usage {
-    echo "Translate Flex theme tool"
+    echo "Translate Reflex theme tool"
     echo ""
     echo "Usage:"
     echo ""

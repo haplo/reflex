@@ -7,14 +7,14 @@ A minimalist [Pelican](http://blog.getpelican.com/) theme, forked from [Flex](ht
 - Mobile First
 - Responsive
 - Semantic
-- SEO Best Practices
+- SEO best practices
 - Open Graph
-- Rich Snippets (JSON-LD)
-- Related Posts (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/related_posts) or AddThis)
+- Rich snippets (JSON-LD)
+- Related posts (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/related_posts) or AddThis)
 - Minute read (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/post_stats))
-- [Multiple Code Highlight Styles](https://github.com/alexandrevicenzi/Flex/wiki/Code-Highlight)
-- [Translation Support](https://github.com/alexandrevicenzi/Flex/wiki/Translations)
-- [Dark Mode](https://github.com/alexandrevicenzi/Flex/wiki/Dark-Mode)
+- [Multiple code highlight styles](docs/code_highlight.md)
+- [Translation support](docs/translation.md)
+- [Dark mode](docs/dark_mode.md)
 
 ## Integrations
 
