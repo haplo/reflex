@@ -2,6 +2,11 @@
 
 A minimalist [Pelican](http://blog.getpelican.com/) theme, forked from [Flex](https://github.com/alexandrevicenzi/Flex).
 
+## Differences with Flex
+
+- [In-repo documentation](docs/) instead of Github wiki.
+- Shynet tracking support.
+
 ## Features
 
 - Mobile First
