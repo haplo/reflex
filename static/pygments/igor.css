@@ -1,5 +1,10 @@
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
 .highlight .hll { background-color: #ffffcc }
-.highlight  { background: #ffffff; }
+.highlight { background: #ffffff; }
 .highlight .c { color: #FF0000; font-style: italic } /* Comment */
 .highlight .k { color: #0000FF } /* Keyword */
 .highlight .ch { color: #FF0000; font-style: italic } /* Comment.Hashbang */
@@ -32,8 +37,13 @@
 .highlight .s1 { color: #009C00 } /* Literal.String.Single */
 .highlight .ss { color: #009C00 } /* Literal.String.Symbol */
 .highlight .fm { color: #C34E00 } /* Name.Function.Magic */
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
 .literal-block .hll { background-color: #ffffcc }
-.literal-block  { background: #ffffff; }
+.literal-block { background: #ffffff; }
 .literal-block .c { color: #FF0000; font-style: italic } /* Comment */
 .literal-block .k { color: #0000FF } /* Keyword */
 .literal-block .ch { color: #FF0000; font-style: italic } /* Comment.Hashbang */

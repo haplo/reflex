@@ -1,5 +1,10 @@
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
 .highlight .hll { background-color: #ffffcc }
-.highlight  { background: #ffffff; }
+.highlight { background: #ffffff; }
 .highlight .c { color: #666666; font-style: italic } /* Comment */
 .highlight .err { color: #FF0000; background-color: #FFAAAA } /* Error */
 .highlight .k { color: #228899; font-weight: bold } /* Keyword */
@@ -67,8 +72,13 @@
 .highlight .vi { color: #aaaaff } /* Name.Variable.Instance */
 .highlight .vm { color: #003366 } /* Name.Variable.Magic */
 .highlight .il { color: #6666ff; font-weight: bold } /* Literal.Number.Integer.Long */
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
 .literal-block .hll { background-color: #ffffcc }
-.literal-block  { background: #ffffff; }
+.literal-block { background: #ffffff; }
 .literal-block .c { color: #666666; font-style: italic } /* Comment */
 .literal-block .err { color: #FF0000; background-color: #FFAAAA } /* Error */
 .literal-block .k { color: #228899; font-weight: bold } /* Keyword */

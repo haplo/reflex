@@ -1,6 +1,6 @@
 ## 1.0.0
 
-First release, based off [Flex](https://github.com/alexandrevicenzi/Flex) by [alexandrevicenzi](https://github.com/alexandrevicenzi).
+First release, based off [Flex](https://github.com/alexandrevicenzi/Flex) v2.5 by [alexandrevicenzi](https://github.com/alexandrevicenzi).
 
 Changes:
 
@@ -9,3 +9,4 @@ Changes:
 - Fix styles for figure elements.
 - Shynet tracking support.
 - In-repo documentation instead of Github wiki.
+- Updated Pygments styles, new themes available.
