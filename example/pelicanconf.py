@@ -1,22 +1,23 @@
 from datetime import datetime
 
-AUTHOR = "Alexandre Vicenzi"
+AUTHOR = "Fidel Ramos"
 SITEURL = "http://localhost:8000"
-SITENAME = "Flex"
-SITETITLE = "Flex"
-SITESUBTITLE = "The minimalist Pelican theme"
-SITEDESCRIPTION = "Flex - The minimalist Pelican theme."
+SITENAME = "Reflex"
+SITETITLE = "Reflex"
+SITESUBTITLE = "Another minimalist Pelican theme"
+SITEDESCRIPTION = "Reflex - Another minimalist Pelican theme."
 # SITELOGO = ''
 # FAVICON = '/images/favicon.ico'
 BROWSER_COLOR = "#333333"
 PYGMENTS_STYLE = "monokai"
+PYGMENTS_STYLE_DARK = "monokai"
 
 ROBOTS = "index, follow"
 
 THEME = "../"
 PATH = "content"
 OUTPUT_PATH = "blog/"
-TIMEZONE = "America/New_York"
+TIMEZONE = "UTC"
 
 DISABLE_URL_HASH = True
 
@@ -25,6 +26,20 @@ DISABLE_URL_HASH = True
 # PLUGINS = ['i18n_subsites']
 
 # JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
+
+MARKDOWN = {
+    "extensions": [
+        "markdown_captions",
+    ],
+    "extension_configs": {
+        "markdown.extensions.codehilite": {"css_class": "highlight"},
+        "markdown.extensions.extra": {},
+        "markdown.extensions.footnotes": {},
+        "markdown.extensions.meta": {},
+        "markdown.extensions.toc": {"title": "Table of Contents"},
+    },
+    "output_format": "html5",
+}
 
 I18N_TEMPLATES_LANG = "en"
 DEFAULT_LANG = "en"
@@ -45,10 +60,10 @@ USE_FOLDER_AS_CATEGORY = False
 MAIN_MENU = True
 HOME_HIDE_TAGS = True
 
-GITHUB_CORNER_URL = "https://github.com/alexandrevicenzi/Flex"
+GITHUB_CORNER_URL = "https://github.com/haplo/reflex"
 
 SOCIAL = (
-    ("github", "https://github.com/alexandrevicenzi/Flex"),
+    ("github", "https://github.com/haplo/reflex"),
     ("rss", "/blog/feeds/all.atom.xml"),
 )
 
@@ -69,15 +84,7 @@ CC_LICENSE = {
 COPYRIGHT_YEAR = datetime.now().year
 DEFAULT_PAGINATION = 10
 
-DISQUS_SITENAME = "flex-pelican"
-ADD_THIS_ID = "ra-55adbb025d4f7e55"
-
-STATIC_PATHS = ["images", "extra/ads.txt", "extra/CNAME"]
-
-EXTRA_PATH_METADATA = {
-    "extra/ads.txt": {"path": "ads.txt"},
-    "extra/CNAME": {"path": "CNAME"},
-}
+STATIC_PATHS = ["images"]
 
 THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
 THEME_COLOR_ENABLE_USER_OVERRIDE = True

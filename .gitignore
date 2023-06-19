@@ -53,6 +53,8 @@ docs/_build/
 # PyBuilder
 target/
 
+# example site
+example/blog/
 venv
 
 # NPM
@@ -62,3 +64,6 @@ package-lock.json
 # Pelican
 output
 plugins
+
+# direnv
+.direnv
