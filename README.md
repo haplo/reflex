@@ -14,8 +14,9 @@ A minimalist [Pelican](http://blog.getpelican.com/) theme, forked from [Flex](ht
 - Semantic
 - SEO best practices
 - Open Graph
-- Rich snippets (JSON-LD)
-- Related posts (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/related_posts) or AddThis)
+- Rich Snippets (JSON-LD)
+- Related Posts (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/related_posts) or AddThis)
+- Series (via [plugin](https://github.com/pelican-plugins/series))
 - Minute read (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/post_stats))
 - [Multiple code highlight styles](docs/code_highlight.md)
 - [Translation support](docs/translation.md)
@@ -41,9 +42,11 @@ A minimalist [Pelican](http://blog.getpelican.com/) theme, forked from [Flex](ht
 - [I18N Sub-sites](https://github.com/getpelican/pelican-plugins/tree/master/i18n_subsites)
 - [Minute read](https://github.com/getpelican/pelican-plugins/tree/master/post_stats)
 - [Related Posts](https://github.com/getpelican/pelican-plugins/tree/master/related_posts)
+- [Series](https://github.com/pelican-plugins/series)
 - [Representative image](https://github.com/getpelican/pelican-plugins/tree/master/representative_image)
 - [Neighbors](https://github.com/getpelican/pelican-plugins/tree/master/neighbors)
-- [Tipue Search](https://github.com/getpelican/pelican-plugins/blob/master/tipue_search/)
+- [Pelican Search](https://github.com/pelican-plugins/search)
+- [Tipue Search](https://github.com/getpelican/pelican-plugins/blob/master/tipue_search/) (deprecated)
 - [SEO](https://github.com/pelican-plugins/seo)
 
 ## Install

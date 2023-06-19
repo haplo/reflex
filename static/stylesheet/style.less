@@ -292,10 +292,15 @@ main {
         list-style: none;
         margin-bottom: 0;
         padding: 0;
+        padding-inline-start: 1rem;
+      }
 
-        li {
-          padding: 0.3em 0 0.3em 0;
-        }
+      li {
+        padding: 0.3em 0 0.3em 0;
+      }
+
+      > ul {
+        padding: 0;
       }
     }
   }
@@ -493,7 +498,7 @@ ul.social {
     background-color: @github-bg-color;
   }
 
-  a.sc-envelope {
+  a.sc-at, a.sc-mailbox, a.sc-envelope {
     background-color: @email-bg-color;
   }
 
@@ -717,13 +722,15 @@ div.admonition.warning {
   background-color: @admonition-warning-bg-color;
 }
 
-figure,div.figure {
+figure,
+div.figure {
   font-size: 90%;
   color: @figure-color;
 
   figcaption {
     margin-top: 0.5em;
     text-align: center;
+    color: @text-color;
   }
 
   img {
@@ -746,19 +753,48 @@ figure,div.figure {
   }
 }
 
-figure.align-left,div.figure.align-left {
+figure.align-left,
+div.figure.align-left {
   text-align: left;
 }
 
-figure.align-center,div.figure.align-center {
+figure.align-center,
+div.figure.align-center {
   text-align: center;
 }
 
-figure.align-right,div.figure.align-right {
+figure.align-right,
+div.figure.align-right {
   text-align: right;
 }
 
 figure.border,div.figure.border {
   border: 2px solid @med-grey;
   padding: 7px;
+}
+
+.github-corner:hover .octo-arm {
+  animation:octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%,100% {
+    transform:rotate(0);
+  }
+  20%,60% {
+    transform:rotate(-25deg);
+  }
+  40%,80% {
+    transform:rotate(10deg);
+  }
+}
+
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation:none;
+  }
+
+  .github-corner .octo-arm{
+    animation:octocat-wave 560ms ease-in-out;
+  }
 }
