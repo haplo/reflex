@@ -1,29 +1,30 @@
 {
-  "name": "flex",
-  "version": "2.3.0",
-  "description": "A minimalist Pelican theme",
+  "name": "reflex",
+  "version": "1.0.0",
+  "description": "Another minimalist Pelican theme",
   "main": "gulpfile.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "source venv/bin/activate && pip install pelican markdown && pelican -s tests/pelicanconf.py && deactivate",
+    "test": "source venv/bin/activate && pip install -r requirements.txt && pelican -s tests/pelicanconf.py && deactivate",
     "build": "gulp default",
     "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexandrevicenzi/Flex.git"
+    "url": "git+https://github.com/haplo/reflex.git"
   },
   "keywords": [
-    "pelican"
+    "pelican",
+    "theme"
   ],
-  "author": "Alexandre Vicenzi",
+  "author": "Fidel Ramos",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alexandrevicenzi/Flex/issues"
+    "url": "https://github.com/haplo/reflex/issues"
   },
-  "homepage": "https://github.com/alexandrevicenzi/Flex#readme",
+  "homepage": "https://github.com/haplo/reflex#readme",
   "dependencies": {
     "gulp": "^4.0.2",
     "gulp-cssnano": "^2.1.3",
