@@ -1,5 +1,10 @@
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
 .highlight .hll { background-color: #ffffcc }
-.highlight  { background: #ffffff; }
+.highlight { background: #ffffff; }
 .highlight .c { color: #888888; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
@@ -42,8 +47,13 @@
 .highlight .vg { color: #666666; font-weight: bold; font-style: italic } /* Name.Variable.Global */
 .highlight .vi { color: #666666; font-weight: bold; font-style: italic } /* Name.Variable.Instance */
 .highlight .vm { color: #666666; font-weight: bold; font-style: italic } /* Name.Variable.Magic */
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
 .literal-block .hll { background-color: #ffffcc }
-.literal-block  { background: #ffffff; }
+.literal-block { background: #ffffff; }
 .literal-block .c { color: #888888; font-style: italic } /* Comment */
 .literal-block .err { border: 1px solid #FF0000 } /* Error */
 .literal-block .k { font-weight: bold } /* Keyword */
