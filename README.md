@@ -15,7 +15,7 @@ A minimalist [Pelican](http://blog.getpelican.com/) theme, forked from [Flex](ht
 - SEO best practices
 - Open Graph
 - Rich Snippets (JSON-LD)
-- Related Posts (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/related_posts) or AddThis)
+- Related Posts (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/related_posts) or [AddThis](http://www.addthis.com/))
 - Series (via [plugin](https://github.com/pelican-plugins/series))
 - Minute read (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/post_stats))
 - [Multiple code highlight styles](docs/code_highlight.md)
