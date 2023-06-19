@@ -31,8 +31,26 @@ Add `border` class to add a border around the figure and caption.
 
 [markdown-captions](https://github.com/evidlo/markdown_captions) is recommended as it generates semantic `figure` and `figcaption` HTML elements, with support for tooltips and HTML classes.
 
+Install the [markdown-captions](https://pypi.org/project/markdown-captions/) dependency, then add it to your *pelicanconf.py*:
+
+```python
+MARKDOWN = {
+    "extensions": [
+        "markdown_captions",
+    ],
+}
+```
+
 An example of a center-aligned figure with caption, tooltip and border using *markdown-captions*:
 
 ``` markdown
 ![Caption](img.jpg "Tooltip on hover"){: .align-center .border}
+```
+
+For large images you can make them clickable to open full size:
+
+``` markdown
+[
+![Caption](img.jpg "Click to see full size"){: .align-center .border}
+](img.jpg "Click to see full size")
 ```
