@@ -10,3 +10,4 @@ Changes:
 - Shynet tracking support.
 - In-repo documentation instead of Github wiki.
 - Updated Pygments styles, new themes available.
+- Make `<strong>` text bold (it was being overridden inside `<blockquote>` and potentially other tags)
