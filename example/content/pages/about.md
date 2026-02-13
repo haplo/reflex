@@ -1,5 +1,4 @@
 Title: About
-Date: 2015-07-18 08:00
-Modified: 2018-01-01 08:00
+Date: 2023-06-17 16:38:53
 
-Flex - The minimalist Pelican theme.
+Reflex is a Pelican theme based off [Flex](https://github.com/alexandrevicenzi/Flex), by Alexandre Vicenzi.

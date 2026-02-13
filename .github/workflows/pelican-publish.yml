@@ -1,7 +1,7 @@
 name: Pelican Build
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,11 +15,11 @@ jobs:
       with:
         file: requirements.txt
         content: |
-          pelican
-          markdown
+          pelican[markdown]
+          markdown-captions==2.1.2
     - name: Build and Publish
       uses: iranzo/gh-pages-pelican-action@1.0.1
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        SOURCE_FOLDER: docs/content
-        PELICAN_CONFIG_FILE: docs/publishconf.py
+        SOURCE_FOLDER: example/content
+        PELICAN_CONFIG_FILE: example/publishconf.py

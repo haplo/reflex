@@ -2,6 +2,9 @@
 
 A minimalist [Pelican](http://blog.getpelican.com/) theme, forked from [Flex](https://github.com/alexandrevicenzi/Flex).
 
+Check out the [live example site](https://haplo.github.io/reflex/).
+Its source code is [in the example directory](example).
+
 ## Differences with Flex
 
 - [In-repo documentation](docs/) instead of Github wiki.
