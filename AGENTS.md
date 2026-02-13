@@ -30,11 +30,11 @@ gulp pygments    # Minify pygments CSS
 ### Python/Pelican (Testing)
 
 ```bash
-# Test with tox (tests across Python 3.6-3.9)
+# Test with tox (tests across multiple Python versions)
 tox
 
 # Test specific Python version
-tox -e py39
+tox -e py314
 
 # Build docs (test the theme)
 pelican -s docs/pelicanconf.py

@@ -8,10 +8,9 @@ jobs:
     strategy:
       matrix:
         python-version:
-          - 3.6
-          - 3.7
-          - 3.8
-          - 3.9
+          - 3.12
+          - 3.13
+          - 3.14
     steps:
     - name: Checkout
       uses: actions/checkout@v2
