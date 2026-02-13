@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Reflex</title><link href="https://haplo.github.io/reflex/" rel="alternate"/><link href="https://haplo.github.io/reflex/feeds/all.atom.xml" rel="self"/><id>https://haplo.github.io/reflex/</id><updated>2023-06-16T00:00:00+00:00</updated><subtitle>Another minimalist Pelican theme</subtitle><entry><title>Reflex: Responsive Pelican theme</title><link href="https://haplo.github.io/reflex/reflex-pelican-theme.html" rel="alternate"/><published>2023-06-16T00:00:00+00:00</published><updated>2023-06-16T00:00:00+00:00</updated><author><name>Fidel Ramos</name></author><id>tag:haplo.github.io,2023-06-16:/reflex/reflex-pelican-theme.html</id><summary type="html">&lt;p&gt;When I started &lt;a href="https://blog.fidelramos.net"&gt;my blog&lt;/a&gt; I looked all the options in the &lt;a href="http://www.pelicanthemes.com/"&gt;Pelican theme
+gallery&lt;/a&gt;, and decided on the &lt;a href="https://github.com/alexandrevicenzi/Flex"&gt;Flex theme by Alexandre
+Vizenzi&lt;/a&gt; as the best one for my needs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Minimalistic and beautiful.&lt;/li&gt;
+&lt;li&gt;Responsive layout.&lt;/li&gt;
+&lt;li&gt;Archives, categories, tags support.&lt;/li&gt;
+&lt;li&gt;Pygments support for code highlighting.&lt;/li&gt;
+&lt;li&gt;Light/Dark modes support.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Eventually …&lt;/p&gt;</summary><content type="html">&lt;p&gt;When I started &lt;a href="https://blog.fidelramos.net"&gt;my blog&lt;/a&gt; I looked all the options in the &lt;a href="http://www.pelicanthemes.com/"&gt;Pelican theme
+gallery&lt;/a&gt;, and decided on the &lt;a href="https://github.com/alexandrevicenzi/Flex"&gt;Flex theme by Alexandre
+Vizenzi&lt;/a&gt; as the best one for my needs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Minimalistic and beautiful.&lt;/li&gt;
+&lt;li&gt;Responsive layout.&lt;/li&gt;
+&lt;li&gt;Archives, categories, tags support.&lt;/li&gt;
+&lt;li&gt;Pygments support for code highlighting.&lt;/li&gt;
+&lt;li&gt;Light/Dark modes support.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Eventually , so I started &lt;a href="https://github.com/alexandrevicenzi/Flex/pulls?q=is%3Apr+author%3Ahaplo+"&gt;contributing to Flex&lt;/a&gt;.
+However some of my desired changes were too deep, and they didn't fit in Flex as the project was in maintenance mode.
+After some thinking I decided to fork the theme to introduce my more breaking changes.&lt;/p&gt;
+&lt;p&gt;Reflex is intentionally very similar and mostly compatible with Flex, and the plan is to keep it compatible as much as possible.
+There will be new features and some style tweaks, but nothing major.
+Reflex will incorporate new versions of Flex as they are released.&lt;/p&gt;
+&lt;p&gt;See this screenshot of how Reflex looks (also serves as an example of how to add captions using markdown-captions, see the &lt;a href="https://github.com/haplo/reflex/blob/master/docs/figures.md"&gt;figures documentation&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://haplo.github.io/reflex/images/reflex-screenshot.png" title="Click to see full size"&gt;
+&lt;figure&gt;&lt;img src="https://haplo.github.io/reflex/images/reflex-screenshot.png" title="Click to see full size"&gt;&lt;figcaption&gt;Screenshot of Reflex theme&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Reflex supports all integrations that Flex does, but the only one I personally use is the Shynet integration.&lt;/p&gt;
+&lt;p&gt;If you need to show some program output you can use &lt;code&gt;&amp;lt;samp&amp;gt;&lt;/code&gt; tag to look like this:&lt;/p&gt;
+&lt;p&gt;&lt;samp&gt;Done: Processed 4 articles, 0 drafts, 2 pages and 0 hidden pages in 0.22 seconds.&lt;/samp&gt;&lt;/p&gt;
+&lt;p&gt;Or if you want multiple lines:&lt;/p&gt;
+&lt;p&gt;&lt;samp&gt;
+             total       used       free     shared    buffers     cached
+Mem:          5866       4674       1192        386          0       2404
+-/+ buffers/cache:       2269       3596
+Swap:        20480       1267      19213
+&lt;/samp&gt;&lt;/p&gt;
+&lt;p&gt;If you like to share code snippets, you can take advantage of &lt;a href="http://pygments.org/"&gt;Pygments&lt;/a&gt; syntax highlighting:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;// Javascript&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;bar&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Python&lt;/span&gt;
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Foo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;object&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="fm"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;bar&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;bar&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;bar&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Bash&lt;/span&gt;
+ls&lt;span class="w"&gt; &lt;/span&gt;*.jpg&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;xargs&lt;span class="w"&gt; &lt;/span&gt;-n1&lt;span class="w"&gt; &lt;/span&gt;-i&lt;span class="w"&gt; &lt;/span&gt;cp&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;{}&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;/external-hard-drive/directory
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;All &lt;a href="https://pygments.org/demo/"&gt;Pygments themes&lt;/a&gt; are available.&lt;/p&gt;
+&lt;p&gt;You can add tables too:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Computer&lt;/td&gt;
+&lt;td&gt;$1600&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Phone&lt;/td&gt;
+&lt;td&gt;$12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Pipe&lt;/td&gt;
+&lt;td&gt;$1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;And this is how headings looks like:&lt;/p&gt;
+&lt;h1 id="this-is-heading-1"&gt;This is heading 1&lt;/h1&gt;
+&lt;h2 id="this-is-heading-2"&gt;This is heading 2&lt;/h2&gt;
+&lt;h3 id="this-is-heading-3"&gt;This is heading 3&lt;/h3&gt;
+&lt;h4 id="this-is-heading-4"&gt;This is heading 4&lt;/h4&gt;
+&lt;h5 id="this-is-heading-5"&gt;This is heading 5&lt;/h5&gt;
+&lt;h6 id="this-is-heading-6"&gt;This is heading 6&lt;/h6&gt;
+&lt;p&gt;You can add a Table of Contents (see &lt;a href="https://github.com/haplo/reflex/blob/master/docs/toc.md"&gt;toc documentation&lt;/a&gt;):&lt;/p&gt;
+&lt;div class="toc"&gt;&lt;span class="toctitle"&gt;Table of Contents&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#this-is-heading-1"&gt;This is heading 1&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#this-is-heading-2"&gt;This is heading 2&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#this-is-heading-3"&gt;This is heading 3&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#this-is-heading-4"&gt;This is heading 4&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#this-is-heading-5"&gt;This is heading 5&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#this-is-heading-6"&gt;This is heading 6&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;These examples are in Markdown.
+I don't test content in reStructuredText, if there are any bugs feel free to send a patch.
+Keep in mind that Markdown allows you to add HTML tags.
+If you can create the same HTML syntax produced by Markdown using reStructuredText it will work.&lt;/p&gt;
+&lt;p&gt;You can look at the &lt;a href=""&gt;source code of this page&lt;/a&gt; to see the markup for all the examples.&lt;/p&gt;
+&lt;p&gt;If you want to contribute to Reflex, check the &lt;a href="https://github.com/haplo/reflex"&gt;source code&lt;/a&gt;, &lt;a href="https://github.com/haplo/reflex/discussions"&gt;drop a comment&lt;/a&gt; or &lt;a href="https://github.com/haplo/reflex/issues"&gt;open an issue&lt;/a&gt; if you need a feature or found a bug.&lt;/p&gt;</content><category term="News"/><category term="pelican"/><category term="python"/><category term="theme"/></entry></feed>
