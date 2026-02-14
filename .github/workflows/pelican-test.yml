@@ -1,7 +1,11 @@
 name: Pelican test
 on:
-  - push
-  - pull_request
+  push:
+    paths:
+      - 'example/**'
+  pull_request:
+    paths:
+      - 'example/**'
 jobs:
   build:
     runs-on: ubuntu-latest
