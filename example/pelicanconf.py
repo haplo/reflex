@@ -63,6 +63,7 @@ HOME_HIDE_TAGS = True
 GITHUB_CORNER_URL = "https://github.com/haplo/reflex"
 
 SOCIAL = (
+    ("x-twitter", "https://x.com/ampajaro"),
     ("github", "https://github.com/haplo/reflex"),
     ("rss", "/blog/feeds/all.atom.xml"),
 )

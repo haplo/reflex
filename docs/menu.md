@@ -51,7 +51,7 @@ LINKS = (
 )
 
 SOCIAL = [
-    ("twitter", "https://twitter.com/ampajaro"),
+    ("x-twitter", "https://x.com/ampajaro"),
     ("mastodon", "https://mastodon.social/@fidel"),
     ("github", "https://github.com/haplo"),
     ("flickr", "https://www.flickr.com/photos/fidelramos/"),
