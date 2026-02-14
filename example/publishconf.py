@@ -4,7 +4,7 @@ sys.path.append(os.curdir)
 
 from pelicanconf import *
 
-SITEURL = "https://haplo.github.io/reflex/"
+SITEURL = "https://haplo.github.io/reflex"
 
 RELATIVE_URLS = False
 
