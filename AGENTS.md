@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Reflex is a minimalist Pelican theme using Jinja2 templates, LESS stylesheets, and JavaScript. It uses Gulp for asset compilation and Tox for testing.
+Reflex is a minimalist Pelican theme using Jinja2 templates, LESS stylesheets, and JavaScript. It uses Gulp for asset compilation.
 
 ## Build Commands
 
@@ -30,17 +30,8 @@ gulp pygments    # Minify pygments CSS
 ### Python/Pelican (Testing)
 
 ```bash
-# Test with tox (tests across multiple Python versions)
-tox
-
-# Test specific Python version
-tox -e py314
-
 # Build docs (test the theme)
 pelican -s docs/pelicanconf.py
-
-# Using npm script (requires venv setup):
-npm test
 ```
 
 ### Example Site (in example/ directory)
@@ -121,15 +112,12 @@ make publish
 ├── docs/                 # Documentation
 ├── example/              # Example Pelican site
 ├── gulpfile.js           # Gulp build configuration
-├── package.json          # Node.js dependencies
-└── tox.ini               # Tox configuration
+└── package.json          # Node.js dependencies
 ```
 
 ## Testing
 
 - Tests build the docs/ site as a smoke test
-- Tox tests across Python 3.6, 3.7, 3.8, 3.9
-- GitHub Actions runs tests on push/PR
 - No unit tests - testing is done by building the theme
 
 ## Dependencies
