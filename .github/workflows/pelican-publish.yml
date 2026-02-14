@@ -1,25 +1,42 @@
 name: Pelican Build
 on:
   push:
-    branches: [ main ]
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-      with:
-        submodules: true
-    - name: Create requirements.txt
-      uses: 1arp/create-a-file-action@0.2
-      with:
-        file: requirements.txt
-        content: |
-          pelican[markdown]
-          markdown-captions==2.1.2
-    - name: Build and Publish
-      uses: iranzo/gh-pages-pelican-action@1.0.1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        SOURCE_FOLDER: example/content
-        PELICAN_CONFIG_FILE: example/publishconf.py
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: pip install "pelican[markdown]" markdown-captions==2.1.2
+      - name: Build site
+        run: make publish
+        working-directory: example
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: example/blog
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
+        id: deployment
