@@ -1,0 +1,33 @@
+name: Check npm build
+on:
+  pull_request:
+    paths:
+      - 'package*.json'
+      - 'gulpfile.js'
+      - 'static/stylesheet/**/*.less'
+      - 'static/dark-theme/**/*.js'
+      - 'static/pygments/**/*.css'
+      - '.github/workflows/check-npm-build.yml'
+
+jobs:
+  check-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 'lts/*'
+          cache: 'npm'
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Check for uncommitted changes
+        run: |
+          if git diff --exit-code; then
+            echo "Assets are up to date"
+          else
+            echo "::error::Assets need to be rebuilt. Run 'npm run build' and commit the changes."
+            exit 1
+          fi
