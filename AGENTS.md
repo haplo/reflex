@@ -160,6 +160,7 @@ make publish
 ## Notes
 
 - Always rebuild assets (`npm run build`) before committing
+- A PR check (`check-npm-build.yml`) verifies that built assets are up to date; PRs with stale assets cannot be merged
 - The theme supports both light and dark modes
 - Font Awesome is copied from node_modules to static/
 - Pygments styles are minified but kept as separate files
