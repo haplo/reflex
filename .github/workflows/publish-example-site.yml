@@ -1,4 +1,4 @@
-name: Pelican Build
+name: Publish example site
 on:
   push:
     branches: [main]
