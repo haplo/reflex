@@ -19,7 +19,7 @@ Eventually I ran into some missing features or small things that I wanted to upd
 However some of my desired changes were too deep, and they didn't fit in Flex as the project was in maintenance mode.
 After some thinking I decided to fork the theme to introduce my more breaking changes.
 
-Reflex is intentionally very similar and mostly compatible with Flex, and the plan is to keep it compatible as much as possible.
+Reflex is intentionally very similar and mostly compatible with Flex, and the plan is to keep that way.
 There will have some new features and some style tweaks, but there is no major rewrite planned.
 Reflex will incorporate new versions of Flex as long as the two codebases remain compatible.
 

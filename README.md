@@ -9,6 +9,9 @@ Its source code is [in the example directory](example).
 
 - [In-repo documentation](docs/) instead of Github wiki.
 - Shynet tracking support.
+- [Table of contents](docs/toc.md) styling.
+- [Figures and captions](docs/figures.md) support.
+- X social icon.
 
 ## Features
 
