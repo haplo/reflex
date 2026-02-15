@@ -8,6 +8,7 @@ on:
       - 'static/dark-theme/**/*.js'
       - 'static/pygments/**/*.css'
       - '.github/workflows/check-npm-build.yml'
+  workflow_call:
 
 jobs:
   check-build:

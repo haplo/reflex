@@ -1,0 +1,42 @@
+[project]
+name = "pelican-reflex"
+version = "3.0.0"
+description = "A minimalist Pelican theme, forked from Flex"
+authors = [{ name = "Fidel Ramos" }]
+license = { text = "MIT" }
+readme = "README.md"
+keywords = ["pelican", "theme", "static site"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "Framework :: Pelican",
+    "Framework :: Pelican :: Themes",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Content Management System",
+    "Topic :: Text Processing :: Markup :: HTML",
+]
+requires-python = ">=3.8"
+
+[project.urls]
+Homepage = "https://github.com/haplo/reflex"
+Repository = "https://github.com/haplo/reflex"
+Issues = "https://github.com/haplo/reflex/issues"
+Changelog = "https://github.com/haplo/reflex/blob/master/CHANGELOG.md"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm.build]
+includes = [
+    "templates/",
+    "static/",
+    "translations/",
+]
+excludes = [
+    "**/.DS_Store",
+    "**/__pycache__/**",
+]
