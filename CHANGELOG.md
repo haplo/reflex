@@ -1,8 +1,15 @@
+## 3.0.1
+
+This is the first release on PyPI as [pelican-theme-reflex](https://pypi.org/project/pelican-theme-reflex/).
+
+- Fix Python package structure.
+- Upgrade NPM dependencies.
+
 ## 3.0.0
 
 First release after forking off [Flex](https://github.com/alexandrevicenzi/Flex) v2.5 by [alexandrevicenzi](https://github.com/alexandrevicenzi).
 
-This is the first release on PyPI as [pelican-reflex](https://pypi.org/project/pelican-reflex/).
+~~This is the first release on PyPI as [pelican-reflex](https://pypi.org/project/pelican-reflex/).~~ (the release was buggy and was pulled)
 
 Changes since Flex 2.5:
 
