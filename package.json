@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haplo/reflex.git"
+    "url": "git+https://github.com/haplo/python-theme-reflex.git"
   },
   "keywords": [
     "pelican",
@@ -22,9 +22,9 @@
   "author": "Fidel Ramos",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/haplo/reflex/issues"
+    "url": "https://github.com/haplo/python-theme-reflex/issues"
   },
-  "homepage": "https://github.com/haplo/reflex#readme",
+  "homepage": "https://github.com/haplo/python-theme-reflex#readme",
   "dependencies": {
     "gulp": "^4.0.2",
     "gulp-cssnano": "^2.1.3",

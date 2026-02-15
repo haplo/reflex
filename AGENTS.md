@@ -30,8 +30,8 @@ gulp pygments    # Minify pygments CSS
 ### Python/Pelican (Testing)
 
 ```bash
-# Build docs (test the theme)
-pelican -s docs/pelicanconf.py
+# Build example site (test the theme)
+pelican -s example/pelicanconf.py
 ```
 
 ### Example Site (in example/ directory)
@@ -91,7 +91,7 @@ make publish
 ### File Naming
 
 - Templates: lowercase with hyphens (e.g., `base.html`, `dark-theme.less`)
-- Partials: place in `templates/partial/` directory
+- Partials: place in pelican/themes/reflex/templates/partial/ directory
 - Stylesheets: use `.less` extension for source, `.min.css` for compiled
 - JavaScript: use `.js` extension for source, `.min.js` for minified
 
@@ -99,16 +99,21 @@ make publish
 
 ```
 .
-├── static/               # Static assets
-│   ├── stylesheet/       # LESS/CSS files
-│   ├── dark-theme/       # Dark theme JS
-│   ├── pygments/         # Code highlighting styles
-│   └── font-awesome/     # Font Awesome assets
-├── templates/            # Jinja2 templates
-│   ├── partial/          # Reusable template partials
-│   ├── base.html         # Base template
-│   ├── article.html      # Article page
-│   └── index.html        # Index page
+├── pelican/
+│   └── themes/
+│       └── reflex/        # Theme package
+│           ├── __init__.py    # path() function for Pelican
+│           ├── static/        # Static assets
+│           │   ├── stylesheet/   # LESS/CSS files
+│           │   ├── dark-theme/   # Dark theme JS
+│           │   ├── pygments/     # Code highlighting styles
+│           │   └── font-awesome/ # Font Awesome assets
+│           ├── templates/     # Jinja2 templates
+│           │   ├── partial/      # Reusable template partials
+│           │   ├── base.html     # Base template
+│           │   ├── article.html   # Article page
+│           │   └── index.html    # Index page
+│           └── translations/  # i18n translations
 ├── docs/                 # Documentation
 ├── example/              # Example Pelican site
 ├── gulpfile.js           # Gulp build configuration
@@ -117,7 +122,7 @@ make publish
 
 ## Testing
 
-- Tests build the docs/ site as a smoke test
+- Tests build the example/ site as a smoke test
 - No unit tests - testing is done by building the theme
 
 ## Dependencies
@@ -133,35 +138,50 @@ make publish
 ### Python (for testing)
 
 - pelican
-- Dependencies in docs/requirements.txt
+- Dependencies in example/requirements.txt
 
 ## Common Tasks
 
 ### Adding a New Template Partial
 
-1. Create file in `templates/partial/`
+1. Create file in `pelican/themes/reflex/templates/partial/`
 2. Include in base.html or relevant template
 3. Follow 2-space indentation
 4. Use existing partials as reference
 
 ### Adding New Styles
 
-1. Edit appropriate `.less` file in `static/stylesheet/`
+1. Edit appropriate `.less` file in `pelican/themes/reflex/static/stylesheet/`
 2. Use variables from `variables.less`
 3. Run `gulp less` or `npm run watch` to compile
 4. Test in both light and dark themes
 
 ### Adding JavaScript
 
-1. Edit source file in `static/dark-theme/`
+1. Edit source file in `pelican/themes/reflex/static/dark-theme/`
 2. Run `gulp uglify` to minify
 3. Ensure minified version is referenced in templates
+
+## Releasing
+
+See [RELEASE.md](RELEASE.md) for the full release process.
+
+Quick summary:
+
+1. Update version in `pyproject.toml` and `package.json`
+2. Update `CHANGELOG.md`
+3. Run `npm run build`
+4. Commit and tag: `git tag -a vX.Y.Z -m "Release vX.Y.Z"`
+5. Push tag: `git push origin vX.Y.Z`
+6. Create GitHub release: `gh release create vX.Y.Z --generate-notes`
+
+PyPI publishing is automated via the `pypi-publish.yml` workflow when a `v*` tag is pushed. The workflow calls `check-npm-build.yml` to verify assets are up to date before publishing.
 
 ## Notes
 
 - Always rebuild assets (`npm run build`) before committing
 - A PR check (`check-npm-build.yml`) verifies that built assets are up to date; PRs with stale assets cannot be merged
 - The theme supports both light and dark modes
-- Font Awesome is copied from node_modules to static/
+- Font Awesome is copied from node_modules to pelican/themes/reflex/static/
 - Pygments styles are minified but kept as separate files
 - No linting tools are configured - follow existing code style

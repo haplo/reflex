@@ -23,7 +23,7 @@ Reflex is intentionally very similar and mostly compatible with Flex, and the pl
 There will have some new features and some style tweaks, but there is no major rewrite planned.
 Reflex will incorporate new versions of Flex as long as the two codebases remain compatible.
 
-See this screenshot of how Reflex looks (also serves as an example of how to add captions using *markdown-captions*, see the [figures documentation](https://github.com/haplo/reflex/blob/master/docs/figures.md)):
+See this screenshot of how Reflex looks (also serves as an example of how to add captions using *markdown-captions*, see the [figures documentation](https://github.com/haplo/python-theme-reflex/blob/master/docs/figures.md)):
 
 [
 ![Screenshot of Reflex theme]({static}/images/reflex-screenshot.png "Click to see full size")
@@ -82,7 +82,7 @@ And this is how headings looks like:
 ##### This is heading 5
 ###### This is heading 6
 
-You can add a Table of Contents (see [toc documentation](https://github.com/haplo/reflex/blob/master/docs/toc.md)):
+You can add a Table of Contents (see [toc documentation](https://github.com/haplo/python-theme-reflex/blob/master/docs/toc.md)):
 
 [TOC]
 
@@ -93,4 +93,4 @@ If you can create the same HTML syntax produced by Markdown using reStructuredTe
 
 You can look at the [source code of this page]() to see the markup for all the examples.
 
-If you want to contribute to Reflex, check the [source code](https://github.com/haplo/reflex), [drop a comment](https://github.com/haplo/reflex/discussions) or [open an issue](https://github.com/haplo/reflex/issues) if you need a feature or found a bug.
+If you want to contribute to Reflex, check the [source code](https://github.com/haplo/python-theme-reflex), [drop a comment](https://github.com/haplo/python-theme-reflex/discussions) or [open an issue](https://github.com/haplo/python-theme-reflex/issues) if you need a feature or found a bug.
