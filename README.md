@@ -3,14 +3,14 @@
 A minimalist [Pelican](http://blog.getpelican.com/) theme, forked from [Flex](https://github.com/alexandrevicenzi/Flex).
 
 Check out the [live example site](https://haplo.github.io/pelican-theme-reflex/).
-Its source code is [in the example directory](example).
+Its source code is [in the example directory](https://github.com/haplo/pelican-theme-reflex/tree/main/example).
 
 ## Differences with Flex
 
-- [In-repo documentation](docs/) instead of Github wiki.
+- [In-repo documentation](https://github.com/haplo/pelican-theme-reflex/tree/main/docs) instead of Github wiki.
 - Shynet tracking support.
-- [Table of contents](docs/toc.md) styling.
-- [Figures and captions](docs/figures.md) support.
+- [Table of contents](https://github.com/haplo/pelican-theme-reflex/blob/main/docs/toc.md) styling.
+- [Figures and captions](https://github.com/haplo/pelican-theme-reflex/blob/main/docs/figures.md) support.
 - X social icon.
 
 ## Features
@@ -24,9 +24,9 @@ Its source code is [in the example directory](example).
 - Related Posts (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/related_posts) or [AddThis](http://www.addthis.com/))
 - Series (via [plugin](https://github.com/pelican-plugins/series))
 - Minute read (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/post_stats))
-- [Multiple code highlight styles](docs/code_highlight.md)
-- [Translation support](docs/translation.md)
-- [Dark mode](docs/dark_mode.md)
+- [Multiple code highlight styles](https://github.com/haplo/pelican-theme-reflex/blob/main/docs/code_highlight.md)
+- [Translation support](https://github.com/haplo/pelican-theme-reflex/blob/main/docs/translation.md)
+- [Dark mode](https://github.com/haplo/pelican-theme-reflex/blob/main/docs/dark_theme.md)
 
 ## Integrations
 
@@ -76,7 +76,7 @@ Then point your `THEME` setting in the pelican project to its path.
 
 ## Settings
 
-Look at [settings documentation](docs/settings.md) for details.
+Look at [settings documentation](https://github.com/haplo/pelican-theme-reflex/blob/main/docs/settings.md) for details.
 
 ## Sites using Reflex
 
@@ -90,7 +90,7 @@ Always open an issue before sending a PR.
 Discuss the problem/feature that you want to code.
 After discussing, send a PR with your changes.
 
-See the [development documentation](docs/developing.md).
+See the [development documentation](https://github.com/haplo/pelican-theme-reflex/blob/main/docs/developing.md).
 
 Thank you to all contributors!
 
@@ -98,4 +98,4 @@ Thank you to all contributors!
 
 ## License
 
-MIT ([full license](LICENSE))
+MIT ([full license](https://github.com/haplo/pelican-theme-reflex/blob/main/LICENSE))
