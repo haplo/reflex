@@ -1,5 +1,5 @@
 [project]
-name = "pelican-reflex"
+name = "pelican-theme-reflex"
 version = "3.0.0"
 description = "A minimalist Pelican theme, forked from Flex"
 authors = [{ name = "Fidel Ramos" }]
@@ -21,10 +21,10 @@ classifiers = [
 requires-python = ">=3.8"
 
 [project.urls]
-Homepage = "https://github.com/haplo/reflex"
-Repository = "https://github.com/haplo/reflex"
-Issues = "https://github.com/haplo/reflex/issues"
-Changelog = "https://github.com/haplo/reflex/blob/master/CHANGELOG.md"
+Homepage = "https://github.com/haplo/python-theme-reflex"
+Repository = "https://github.com/haplo/python-theme-reflex"
+Issues = "https://github.com/haplo/python-theme-reflex/issues"
+Changelog = "https://github.com/haplo/python-theme-reflex/blob/master/CHANGELOG.md"
 
 [build-system]
 requires = ["pdm-backend"]

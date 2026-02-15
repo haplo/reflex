@@ -4,11 +4,11 @@ This document describes how to release a new version of Reflex.
 
 ## First-time setup
 
-1. Go to https://pypi.org/manage/projects/ and create a new project named `pelican-reflex`.
+1. Go to https://pypi.org/manage/projects/ and create a new project named `pelican-theme-reflex`.
 2. **Configure trusted publishing** (one-time only):
   1. In PyPI project settings, add a trusted publisher:
     1. PyPI project → Publishing → Add a new pending publisher
-    2. PyPI project name: `pelican-reflex`
+    2. PyPI project name: `pelican-theme-reflex`
     3. Owner: `haplo`
     4. Repository name: `reflex`
     5. Workflow name: `pypi-publish.yml`
@@ -61,17 +61,17 @@ Pushing the tag triggers the [`pypi-publish.yml`](.github/workflows/pypi-publish
 gh release create vX.Y.Z --generate-notes
 ```
 
-Or create manually at https://github.com/haplo/reflex/releases/new
+Or create manually at https://github.com/haplo/python-theme-reflex/releases/new
 
 ### 6. Approve PyPI publish workflow
 
 The workflow that publishes to PyPI requires manual approval in case an attacker gains git push access.
-Go to [GitHub Actions](https://github.com/haplo/reflex/actions/workflows/pypi-publish.yml), review and approve.
+Go to [GitHub Actions](https://github.com/haplo/python-theme-reflex/actions/workflows/pypi-publish.yml), review and approve.
 
 ### 7. Verify
 
-- Check PyPI: https://pypi.org/project/pelican-reflex/
-- Test installation: `pip install pelican-reflex`
+- Check PyPI: https://pypi.org/project/pelican-theme-reflex/
+- Test installation: `pip install pelican-theme-reflex`
 
 ## Versioning
 
@@ -85,7 +85,7 @@ Use semantic versioning (*MAJOR.MINOR.PATCH*):
 
 ### PyPI publish failed
 
-1. Check the [workflow run in GitHub Actions](https://github.com/haplo/reflex/actions/workflows/pypi-publish.yml).
+1. Check the [workflow run in GitHub Actions](https://github.com/haplo/python-theme-reflex/actions/workflows/pypi-publish.yml).
 2. Verify the trusted publisher is configured correctly on both Github and PyPI.
 3. Ensure the `pypi` environment exists in Github repository settings and has the right settings.
 

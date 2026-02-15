@@ -14,7 +14,7 @@ PYGMENTS_STYLE_DARK = "monokai"
 
 ROBOTS = "index, follow"
 
-THEME = "../"
+THEME = "../pelican/themes/reflex"
 PATH = "content"
 OUTPUT_PATH = "blog/"
 TIMEZONE = "UTC"
@@ -60,11 +60,11 @@ USE_FOLDER_AS_CATEGORY = False
 MAIN_MENU = True
 HOME_HIDE_TAGS = True
 
-GITHUB_CORNER_URL = "https://github.com/haplo/reflex"
+GITHUB_CORNER_URL = "https://github.com/haplo/python-theme-reflex"
 
 SOCIAL = (
     ("x-twitter", "https://x.com/ampajaro"),
-    ("github", "https://github.com/haplo/reflex"),
+    ("github", "https://github.com/haplo/python-theme-reflex"),
     ("rss", "/blog/feeds/all.atom.xml"),
 )
 

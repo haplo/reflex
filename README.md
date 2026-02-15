@@ -2,7 +2,7 @@
 
 A minimalist [Pelican](http://blog.getpelican.com/) theme, forked from [Flex](https://github.com/alexandrevicenzi/Flex).
 
-Check out the [live example site](https://haplo.github.io/reflex/).
+Check out the [live example site](https://haplo.github.io/pelican-theme-reflex/).
 Its source code is [in the example directory](example).
 
 ## Differences with Flex
@@ -57,11 +57,22 @@ Its source code is [in the example directory](example).
 
 ## Install
 
-If you want to try out multiple themes the best way is to use [pelican-themes](https://github.com/getpelican/pelican-themes).
+The theme can be installed from PyPI:
+
+```
+pip install python-theme-reflex
+```
+
+Then in your *pelicanconf.py*:
+
+```python
+from pelican.themes import reflex
+THEME = reflex.path()
+```
 
 The alternative way is to clone this repository.
 The `master` branch should be stable and safe to checkout.
-Then point your `THEME` setting in the pelican project to the path of the theme.
+Then point your `THEME` setting in the pelican project to its path.
 
 ## Settings
 

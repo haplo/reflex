@@ -4,7 +4,11 @@ sys.path.append(os.curdir)
 
 from pelicanconf import *
 
-SITEURL = "https://haplo.github.io/reflex"
+# this tests the Python package for pelican-theme-reflex
+from pelican.themes import reflex
+THEME = reflex.path()
+
+SITEURL = "https://haplo.github.io/pelican-theme-reflex"
 
 RELATIVE_URLS = False
 
