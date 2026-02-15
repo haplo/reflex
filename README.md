@@ -71,7 +71,7 @@ THEME = reflex.path()
 ```
 
 The alternative way is to clone this repository.
-The `master` branch should be stable and safe to checkout.
+The `main` branch should be stable and safe to checkout.
 Then point your `THEME` setting in the pelican project to its path.
 
 ## Settings
