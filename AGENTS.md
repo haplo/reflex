@@ -170,10 +170,11 @@ Quick summary:
 
 1. Update version in `pyproject.toml` and `package.json`
 2. Update `CHANGELOG.md`
-3. Run `npm run build`
-4. Commit and tag: `git tag -a vX.Y.Z -m "Release vX.Y.Z"`
-5. Push tag: `git push origin vX.Y.Z`
-6. Create GitHub release: `gh release create vX.Y.Z --generate-notes`
+3. Write new article in `/example/content/articles/`
+4. Run `npm run build`
+5. Commit and tag: `git tag -a vX.Y.Z -m "Release vX.Y.Z"`
+6. Push tag: `git push origin vX.Y.Z`
+7. Create GitHub release: `gh release create vX.Y.Z --generate-notes`
 
 PyPI publishing is automated via the `pypi-publish.yml` workflow when a `v*` tag is pushed. The workflow calls `check-npm-build.yml` to verify assets are up to date before publishing.
 
