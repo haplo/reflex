@@ -1,3 +1,9 @@
+## 3.0.2
+
+This is a bugfix release.
+
+- Fix wrong references to the project, from *python-theme-reflex* to *pelican-theme-reflex*. While this didn't affect the functionality of Reflex, it affected the installation instructions and most links.
+
 ## 3.0.1
 
 This is the first release on PyPI as [pelican-theme-reflex](https://pypi.org/project/pelican-theme-reflex/).

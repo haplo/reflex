@@ -1,6 +1,6 @@
 [project]
 name = "pelican-theme-reflex"
-version = "3.0.1"
+version = "3.0.2"
 description = "A minimalist Pelican theme, forked from Flex"
 authors = [{ name = "Fidel Ramos" }]
 license = { text = "MIT" }

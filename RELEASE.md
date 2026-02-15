@@ -30,7 +30,13 @@ Update the version number in these files:
 
 Update `CHANGELOG.md` with the changes for this release.
 
-### 2. Build assets
+### 2. Write new article in example site
+
+Write a new article at [/example/content/articles/](/example/content/articles/) for announcing the new release.
+
+Copying the changelog for the release is a good start.
+
+### 3. Build assets
 
 ```bash
 npm run build
@@ -38,14 +44,14 @@ npm run build
 
 This compiles LESS to CSS, minifies JavaScript, and copies font assets.
 
-### 3. Commit changes
+### 4. Commit changes
 
 ```bash
 git add .
 git commit -m "Prepare release vX.Y.Z"
 ```
 
-### 4. Create and push tag
+### 5. Create and push tag
 
 ```bash
 git tag -a vX.Y.Z -m "Release vX.Y.Z" --sign
@@ -55,7 +61,7 @@ git push origin vX.Y.Z
 
 Pushing the tag triggers the [`pypi-publish.yml`](.github/workflows/pypi-publish.yml) workflow which publishes to PyPI.
 
-### 5. Create GitHub release
+### 6. Create GitHub release
 
 ```bash
 gh release create vX.Y.Z --generate-notes
@@ -63,12 +69,12 @@ gh release create vX.Y.Z --generate-notes
 
 Or create manually at https://github.com/haplo/pelican-theme-reflex/releases/new
 
-### 6. Approve PyPI publish workflow
+### 7. Approve PyPI publish workflow
 
 The workflow that publishes to PyPI requires manual approval in case an attacker gains git push access.
 Go to [GitHub Actions](https://github.com/haplo/pelican-theme-reflex/actions/workflows/pypi-publish.yml), review and approve.
 
-### 7. Verify
+### 8. Verify
 
 - Check PyPI: https://pypi.org/project/pelican-theme-reflex/
 - Test installation: `pip install pelican-theme-reflex`
