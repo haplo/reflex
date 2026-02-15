@@ -1,7 +1,8 @@
 var gulp = require('gulp'),
     less = require('gulp-less'),
     rename = require('gulp-rename'),
-    cssnano = require('gulp-cssnano'),
+    postcss = require('gulp-postcss'),
+    cssnano = require('cssnano'),
     uglify = require('gulp-uglify');
 
 gulp.task('less', function () {
@@ -10,7 +11,7 @@ gulp.task('less', function () {
             './pelican/themes/reflex/static/stylesheet/style.less',
         ])
         .pipe(less())
-        .pipe(cssnano())
+        .pipe(postcss([cssnano()]))
         .pipe(rename({
             extname: '.min.css'
         }))
@@ -33,7 +34,7 @@ gulp.task('cp', function () {
 
 gulp.task('pygments', function () {
     return gulp.src(['./pelican/themes/reflex/static/pygments/*.css', '!./pelican/themes/reflex/static/pygments/*min.css'])
-        .pipe(cssnano())
+        .pipe(postcss([cssnano()]))
         .pipe(rename({
             extname: '.min.css'
         }))
