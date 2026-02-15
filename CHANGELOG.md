@@ -1,3 +1,9 @@
+## 3.0.3
+
+This is a minor maintenance release.
+
+- Fix links to Github on the PyPI project page.
+
 ## 3.0.2
 
 This is a bugfix release.
