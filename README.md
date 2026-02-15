@@ -60,7 +60,7 @@ Its source code is [in the example directory](example).
 The theme can be installed from PyPI:
 
 ```
-pip install python-theme-reflex
+pip install pelican-theme-reflex
 ```
 
 Then in your *pelicanconf.py*:

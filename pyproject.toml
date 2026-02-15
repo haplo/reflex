@@ -21,10 +21,10 @@ classifiers = [
 requires-python = ">=3.9"
 
 [project.urls]
-Homepage = "https://github.com/haplo/python-theme-reflex"
-Repository = "https://github.com/haplo/python-theme-reflex"
-Issues = "https://github.com/haplo/python-theme-reflex/issues"
-Changelog = "https://github.com/haplo/python-theme-reflex/blob/master/CHANGELOG.md"
+Homepage = "https://github.com/haplo/pelican-theme-reflex"
+Repository = "https://github.com/haplo/pelican-theme-reflex"
+Issues = "https://github.com/haplo/pelican-theme-reflex/issues"
+Changelog = "https://github.com/haplo/pelican-theme-reflex/blob/main/CHANGELOG.md"
 
 [build-system]
 requires = ["pdm-backend"]

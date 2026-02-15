@@ -151,4 +151,4 @@ Once you have created or updated a translation, and compiled the changes, you ne
 
 1. [Commit your changes to git](https://github.com/git-guides/git-commit).
 2. [Push your changes to GitHub](https://github.com/git-guides/git-push)
-3. [Create a pull request](https://github.com/haplo/python-theme-reflex/pull/new).
+3. [Create a pull request](https://github.com/haplo/pelican-theme-reflex/pull/new).

@@ -60,11 +60,11 @@ USE_FOLDER_AS_CATEGORY = False
 MAIN_MENU = True
 HOME_HIDE_TAGS = True
 
-GITHUB_CORNER_URL = "https://github.com/haplo/python-theme-reflex"
+GITHUB_CORNER_URL = "https://github.com/haplo/pelican-theme-reflex"
 
 SOCIAL = (
     ("x-twitter", "https://x.com/ampajaro"),
-    ("github", "https://github.com/haplo/python-theme-reflex"),
+    ("github", "https://github.com/haplo/pelican-theme-reflex"),
     ("rss", "/blog/feeds/all.atom.xml"),
 )
 

@@ -13,7 +13,7 @@ Reflex is now available on PyPI as [pelican-theme-reflex](https://pypi.org/proje
 It can be installed as a normal package:
 
 ```
-pip install python-theme-reflex
+pip install pelican-theme-reflex
 ```
 
 And then it can be used in *pelicanconf.py* like this:

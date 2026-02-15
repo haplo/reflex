@@ -61,12 +61,12 @@ Pushing the tag triggers the [`pypi-publish.yml`](.github/workflows/pypi-publish
 gh release create vX.Y.Z --generate-notes
 ```
 
-Or create manually at https://github.com/haplo/python-theme-reflex/releases/new
+Or create manually at https://github.com/haplo/pelican-theme-reflex/releases/new
 
 ### 6. Approve PyPI publish workflow
 
 The workflow that publishes to PyPI requires manual approval in case an attacker gains git push access.
-Go to [GitHub Actions](https://github.com/haplo/python-theme-reflex/actions/workflows/pypi-publish.yml), review and approve.
+Go to [GitHub Actions](https://github.com/haplo/pelican-theme-reflex/actions/workflows/pypi-publish.yml), review and approve.
 
 ### 7. Verify
 
@@ -85,7 +85,7 @@ Use semantic versioning (*MAJOR.MINOR.PATCH*):
 
 ### PyPI publish failed
 
-1. Check the [workflow run in GitHub Actions](https://github.com/haplo/python-theme-reflex/actions/workflows/pypi-publish.yml).
+1. Check the [workflow run in GitHub Actions](https://github.com/haplo/pelican-theme-reflex/actions/workflows/pypi-publish.yml).
 2. Verify the trusted publisher is configured correctly on both Github and PyPI.
 3. Ensure the `pypi` environment exists in Github repository settings and has the right settings.
 
