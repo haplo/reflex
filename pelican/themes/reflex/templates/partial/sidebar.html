@@ -76,8 +76,9 @@
         <a class="sc-{{ name }}"
            {% if name in relme %}rel="me"{% endif %}
            href="{{ link }}"
-           target="_blank">
-          <i class="{% if name in solid %}fa-solid{% else %}fa-brands{% endif %} fa-{{ name }}"></i>
+           target="_blank"
+           aria-label="{{ name }}">
+          <i class="{% if name in solid %}fa-solid{% else %}fa-brands{% endif %} fa-{{ name }}" aria-hidden="true"></i>
         </a>
       </li>
       {% endfor %}

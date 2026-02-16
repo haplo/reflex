@@ -20,7 +20,7 @@
     {{ translations.translations_for(page) }}
     <h1 id="{{ page.slug }}">{{ page.title }}</h1>
   </header>
-  <div>
+  <div class="entry-content">
     {% block before_content %}{% endblock %}
     {% block page_content %}{{ page.content }}{% endblock %}
     {% block after_content %}{% endblock %}

@@ -33,7 +33,7 @@
       {% endif %}
     </p>
   </header>
-  <div>
+  <div class="entry-content">
     {% if summarise or article.metadata['summary'] or SUMMARY_MAX_LENGTH %}
       {% if  article.featured_image %}
         <img src="{{ article.featured_image }}">
