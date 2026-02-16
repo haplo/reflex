@@ -33,6 +33,9 @@ build-backend = "pdm.backend"
 [tool.pdm.build]
 includes = [
     "pelican/",
+    "static/",
+    "templates/",
+    "translations/",
 ]
 excludes = [
     "**/.DS_Store",

@@ -91,7 +91,7 @@ make publish
 ### File Naming
 
 - Templates: lowercase with hyphens (e.g., `base.html`, `dark-theme.less`)
-- Partials: place in pelican/themes/reflex/templates/partial/ directory
+- Partials: place in templates/partial/ directory
 - Stylesheets: use `.less` extension for source, `.min.css` for compiled
 - JavaScript: use `.js` extension for source, `.min.js` for minified
 
@@ -101,23 +101,24 @@ make publish
 .
 ├── pelican/
 │   └── themes/
-│       └── reflex/        # Theme package
-│           ├── __init__.py    # path() function for Pelican
-│           ├── static/        # Static assets
-│           │   ├── stylesheet/   # LESS/CSS files
-│           │   ├── dark-theme/   # Dark theme JS
-│           │   ├── pygments/     # Code highlighting styles
-│           │   └── font-awesome/ # Font Awesome assets
-│           ├── templates/     # Jinja2 templates
-│           │   ├── partial/      # Reusable template partials
-│           │   ├── base.html     # Base template
-│           │   ├── article.html   # Article page
-│           │   └── index.html    # Index page
-│           └── translations/  # i18n translations
-├── docs/                 # Documentation
-├── example/              # Example Pelican site
-├── gulpfile.js           # Gulp build configuration
-└── package.json          # Node.js dependencies
+│       └── reflex/
+│           └── __init__.py    # path() function for Pelican
+├── static/                    # Static assets
+│   ├── stylesheet/            # LESS/CSS files
+│   ├── dark-theme/            # Dark theme JS
+│   ├── pygments/              # Code highlighting styles
+│   └── font-awesome/          # Font Awesome assets
+├── templates/                 # Jinja2 templates
+│   ├── partial/               # Reusable template partials
+│   ├── base.html              # Base template
+│   ├── article.html           # Article page
+│   └── index.html             # Index page
+├── translations/              # i18n translations
+├── docs/                      # Documentation
+├── example/                   # Example Pelican site
+├── gulpfile.js                # Gulp build configuration
+├── pdm_build.py               # Build hook for package distribution
+└── package.json               # Node.js dependencies
 ```
 
 ## Testing
@@ -144,21 +145,21 @@ make publish
 
 ### Adding a New Template Partial
 
-1. Create file in `pelican/themes/reflex/templates/partial/`
+1. Create file in `templates/partial/`
 2. Include in base.html or relevant template
 3. Follow 2-space indentation
 4. Use existing partials as reference
 
 ### Adding New Styles
 
-1. Edit appropriate `.less` file in `pelican/themes/reflex/static/stylesheet/`
+1. Edit appropriate `.less` file in `static/stylesheet/`
 2. Use variables from `variables.less`
 3. Run `gulp less` or `npm run watch` to compile
 4. Test in both light and dark themes
 
 ### Adding JavaScript
 
-1. Edit source file in `pelican/themes/reflex/static/dark-theme/`
+1. Edit source file in `static/dark-theme/`
 2. Run `gulp uglify` to minify
 3. Ensure minified version is referenced in templates
 
@@ -183,6 +184,6 @@ PyPI publishing is automated via the `pypi-publish.yml` workflow when a `v*` tag
 - Always rebuild assets (`npm run build`) before committing
 - A PR check (`check-npm-build.yml`) verifies that built assets are up to date; PRs with stale assets cannot be merged
 - The theme supports both light and dark modes
-- Font Awesome is copied from node_modules to pelican/themes/reflex/static/
+- Font Awesome is copied from node_modules to static/
 - Pygments styles are minified but kept as separate files
 - No linting tools are configured - follow existing code style
