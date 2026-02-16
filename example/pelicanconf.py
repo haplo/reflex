@@ -14,7 +14,7 @@ PYGMENTS_STYLE_DARK = "monokai"
 
 ROBOTS = "index, follow"
 
-THEME = "../pelican/themes/reflex"
+THEME = ".."
 PATH = "content"
 OUTPUT_PATH = "blog/"
 TIMEZONE = "UTC"

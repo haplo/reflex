@@ -4,9 +4,9 @@ on:
     paths:
       - 'package*.json'
       - 'gulpfile.js'
-      - 'pelican/themes/reflex/static/stylesheet/**/*.less'
-      - 'pelican/themes/reflex/static/dark-theme/**/*.js'
-      - 'pelican/themes/reflex/static/pygments/**/*.css'
+      - 'static/stylesheet/**/*.less'
+      - 'static/dark-theme/**/*.js'
+      - 'static/pygments/**/*.css'
       - '.github/workflows/check-npm-build.yml'
   workflow_call:
 
