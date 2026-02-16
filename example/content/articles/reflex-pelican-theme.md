@@ -91,6 +91,6 @@ I don't test content in reStructuredText, if there are any bugs feel free to sen
 Keep in mind that Markdown allows you to add HTML tags.
 If you can create the same HTML syntax produced by Markdown using reStructuredText it will work.
 
-You can look at the [source code of this page](https://github.com/haplo/pelican-theme-reflex/blob/main/example/content/articles/reflex-pelican-theme.md) to see the markup for all the examples.
+You can look at the [source code of this page](https://github.com/haplo/pelican-theme-reflex/blob/main/example/content/articles/reflex-pelican-theme.md?plain=1) to see the markup for all the examples.
 
 If you want to contribute to Reflex, check the [source code](https://github.com/haplo/pelican-theme-reflex), [drop a comment](https://github.com/haplo/pelican-theme-reflex/discussions) or [open an issue](https://github.com/haplo/pelican-theme-reflex/issues) if you need a feature or found a bug.
