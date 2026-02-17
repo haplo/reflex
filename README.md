@@ -1,6 +1,6 @@
 # Reflex
 
-A minimalist [Pelican](http://blog.getpelican.com/) theme, forked from [Flex](https://github.com/alexandrevicenzi/Flex).
+A minimalist [Pelican](https://getpelican.com/) theme, forked from [Flex](https://github.com/alexandrevicenzi/Flex).
 
 Check out the [live example site](https://haplo.github.io/pelican-theme-reflex/).
 Its source code is [in the example directory](https://github.com/haplo/pelican-theme-reflex/tree/main/example).
