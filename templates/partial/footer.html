@@ -4,4 +4,13 @@
   {% else %}
     {% include "partial/copyright.html" %}
   {% endif %}
+  {% include "partial/reflex.html" %}
+  <p>
+    {% if CC_LICENSE['icon'] == True %}
+      {% include "partial/cc_license_icon.html" %}
+    {% endif %}
+    {% if STATUSCAKE %}
+      {% include "partial/statuscake.html" %}
+    {% endif %}
+  </p>
 </footer>
