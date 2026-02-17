@@ -1,29 +1,35 @@
 {% extends "base.html" %}
-
 {% block meta %}
-{{ super() }}
-
-{% if page.translations -%}
-<link rel="alternate" href="{{ SITEURL }}/{{ page.url }}" hreflang="{{ page.lang }}" />
-{% for p in page.translations %}
-<link rel="alternate" href="{{ SITEURL }}/{{ p.url }}" hreflang="{{ p.lang }}" />
-{% endfor %}
-{% endif %}
-{% endblock %}
-
-{% block title %} &ndash; {{ page.title|striptags|escape }}{% endblock %}
-
+  {{ super() }}
+  {% if page.translations -%}
+    <link rel="alternate"
+          href="{{ SITEURL }}/{{ page.url }}"
+          hreflang="{{ page.lang }}" />
+    {% for p in page.translations %}
+      <link rel="alternate"
+            href="{{ SITEURL }}/{{ p.url }}"
+            hreflang="{{ p.lang }}" />
+    {% endfor %}
+  {% endif %}
+{% endblock meta %}
+{% block title %}
+  &ndash; {{ page.title|striptags|escape }}
+{% endblock title %}
 {% block content %}
-<article class="single">
-  <header>
-    {% import 'partial/translations.html' as translations with context %}
-    {{ translations.translations_for(page) }}
-    <h1 id="{{ page.slug }}">{{ page.title }}</h1>
-  </header>
-  <div class="entry-content">
-    {% block before_content %}{% endblock %}
-    {% block page_content %}{{ page.content }}{% endblock %}
-    {% block after_content %}{% endblock %}
-  </div>
-</article>
-{% endblock %}
+  <article class="single">
+    <header>
+      {% import 'partial/translations.html' as translations with context %}
+      {{ translations.translations_for(page) }}
+      <h1 id="{{ page.slug }}">{{ page.title }}</h1>
+    </header>
+    <div class="entry-content">
+      {% block before_content %}
+      {% endblock before_content %}
+      {% block page_content %}
+        {{ page.content }}
+      {% endblock page_content %}
+      {% block after_content %}
+      {% endblock after_content %}
+    </div>
+  </article>
+{% endblock content %}
