@@ -121,6 +121,25 @@ make publish
 └── package.json               # Node.js dependencies
 ```
 
+## Pre-commit Hooks
+
+Pre-commit hooks run automatically on `git commit` to ensure code quality:
+
+```bash
+# Install pre-commit (one-time setup)
+pip install pre-commit
+pre-commit install
+
+# Run manually on all files
+pre-commit run --all-files
+```
+
+Hooks configured:
+- **trailing-whitespace** - File hygiene
+- **check-json / check-yaml** - Validate config files
+- **djlint** - Format and lint Jinja2 templates
+- **npm-build-check** - Verify compiled assets are up to date (runs only when source files change)
+
 ## Testing
 
 - Tests build the example/ site as a smoke test
@@ -181,9 +200,8 @@ PyPI publishing is automated via the `pypi-publish.yml` workflow when a `v*` tag
 
 ## Notes
 
-- Always rebuild assets (`npm run build`) before committing
+- Pre-commit hooks enforce code style and verify compiled assets
 - A PR check (`check-npm-build.yml`) verifies that built assets are up to date; PRs with stale assets cannot be merged
 - The theme supports both light and dark modes
 - Font Awesome is copied from node_modules to static/
 - Pygments styles are minified but kept as separate files
-- No linting tools are configured - follow existing code style

@@ -41,3 +41,8 @@ excludes = [
     "**/.DS_Store",
     "**/__pycache__/**",
 ]
+
+[tool.djlint]
+indent = 2
+profile = "jinja"
+ignore = "H006,H013,H019,H021,H022,H023,H031,T002,T028,T032"

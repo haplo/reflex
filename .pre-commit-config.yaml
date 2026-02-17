@@ -1,0 +1,29 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: check-json
+        exclude: ^package-lock\.json$
+      - id: check-yaml
+      - id: check-case-conflict
+      - id: check-merge-conflict
+
+  - repo: https://github.com/djlint/djLint
+    rev: v1.36.4
+    hooks:
+      - id: djlint-reformat
+        files: \.html$
+        types: [file]
+      - id: djlint
+        files: \.html$
+        types: [file]
+
+  - repo: local
+    hooks:
+      - id: npm-build-check
+        name: Check compiled assets
+        entry: bash -c 'npm run build && git diff --exit-code static/stylesheet/*.min.css static/dark-theme/*.min.js static/pygments/*.min.css'
+        language: system
+        files: ^(gulpfile\.js|static/stylesheet/.*\.less|static/dark-theme/.*\.js|static/pygments/.*\.css)$
+        pass_filenames: false

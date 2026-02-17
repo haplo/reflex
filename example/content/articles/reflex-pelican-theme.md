@@ -6,7 +6,7 @@ Slug: reflex-pelican-theme
 Cover: images/reflex-screenshot.png
 
 When I started [my blog](https://blog.fidelramos.net) I looked all the options in the [Pelican theme
-gallery](http://www.pelicanthemes.com/), and decided on the [Flex theme by Alexandre
+gallery](https://pelicanthemes.com/), and decided on the [Flex theme by Alexandre
 Vizenzi](https://github.com/alexandrevicenzi/Flex) as the best one for my needs:
 
 - Minimalistic and beautiful.
@@ -44,7 +44,7 @@ Mem:          5866       4674       1192        386          0       2404
 Swap:        20480       1267      19213
 </samp>
 
-If you like to share code snippets, you can take advantage of [Pygments](http://pygments.org/) syntax highlighting:
+If you like to share code snippets, you can take advantage of [Pygments](https://pygments.org/) syntax highlighting:
 
 ```js
 // Javascript
