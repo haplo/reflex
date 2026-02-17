@@ -87,22 +87,34 @@ main {
       .isso-comment > div.isso-text-wrapper {
         > .isso-comment-header {
           .isso-author {
-            color: @light-grey;
+            color: @isso-author-dark-theme;
           }
 
           .isso-spacer, a.isso-permalink, .isso-note, a.isso-parent {
-            color: @med-grey;
+            color: @isso-link-dark-theme;
 
             &:hover {
-              color: @light-grey;
+              color: @isso-link-hover-dark-theme;
             }
           }
         }
 
         > .isso-comment-footer a:hover {
-          // Unfortunately, Isso uses a lot of !important in its styles, so I
-          // have to override that.
-          text-shadow: @dark-grey 0 0 1px !important;
+          color: @link-hover-color-dark-theme;
+          text-shadow: none;
+        }
+      }
+
+      // Highlight page author comments with special colors
+      .isso-comment.isso-is-page-author > .isso-text-wrapper {
+        background-color: @isso-page-author-bg-dark-theme;
+        > .isso-comment-header {
+          > .isso-author {
+            color: @isso-page-author-name-dark-theme;
+          }
+          > .isso-page-author-suffix {
+            color: @isso-page-author-suffix-dark-theme;
+          }
         }
       }
     }

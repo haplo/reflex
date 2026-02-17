@@ -285,6 +285,19 @@ main {
       margin-right: 5px;
     }
 
+    .isso-comment > div.isso-text-wrapper > .isso-comment-footer a:hover {
+      color: @link-hover-color;
+      text-shadow: none;
+    }
+
+    // Highlight page author comments with special colors
+    .isso-comment.isso-is-page-author > .isso-text-wrapper {
+      background-color: @isso-page-author-bg;
+      > .isso-comment-header > .isso-author {
+        color: @isso-page-author-name;
+      }
+    }
+
     // Table of Contents Markdown extension:
     // https://python-markdown.github.io/extensions/toc/
     .toc {
