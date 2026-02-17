@@ -1,3 +1,2 @@
-# Keep this in sync with .github/workflows/pelican-publish.yml
 pelican[markdown]
 markdown-captions==2.1.2
