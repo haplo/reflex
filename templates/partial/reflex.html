@@ -1,7 +1,7 @@
 <p>
-  {% set built_with = _('Built with %(pelican_url)s using %(flex_url)s theme',
+  {% set built_with = _('Built with %(pelican_url)s using %(theme_url)s theme',
       pelican_url='<a href="https://getpelican.com" target="_blank">Pelican</a>',
-      flex_url='<a href="https://github.com/haplo/pelican-theme-reflex" target="_blank">Reflex</a>'|safe) %}
+      theme_url='<a href="https://github.com/haplo/pelican-theme-reflex" target="_blank">Reflex</a>'|safe) %}
     {{ built_with }}
     {% if THEME_COLOR_ENABLE_USER_OVERRIDE %}
       {% set theme_switch = _('Switch to the %(dark_url)s | %(light_url)s | %(browser_url)s theme',
